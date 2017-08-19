@@ -22,6 +22,7 @@
 		4CCCEB281F47BFA6002CAEFB /* ScreenshotUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCCEB211F47BFA6002CAEFB /* ScreenshotUrl.swift */; };
 		4CCCEB291F47BFA6002CAEFB /* Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCCEB221F47BFA6002CAEFB /* Thumbnail.swift */; };
 		4CCCEB2A1F47BFA6002CAEFB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCCEB231F47BFA6002CAEFB /* User.swift */; };
+		4CECC0D11F48C774002B777E /* CategoriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CECC0D01F48C774002B777E /* CategoriesController.swift */; };
 		EF910DA125D3C028F4A97A4F /* Pods_ProductHunt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CEAE4C971EA0022707BE4A /* Pods_ProductHunt.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		4CCCEB211F47BFA6002CAEFB /* ScreenshotUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScreenshotUrl.swift; path = Models/ScreenshotUrl.swift; sourceTree = "<group>"; };
 		4CCCEB221F47BFA6002CAEFB /* Thumbnail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Thumbnail.swift; path = Models/Thumbnail.swift; sourceTree = "<group>"; };
 		4CCCEB231F47BFA6002CAEFB /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/User.swift; sourceTree = "<group>"; };
+		4CECC0D01F48C774002B777E /* CategoriesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoriesController.swift; path = Controllers/CategoriesController.swift; sourceTree = "<group>"; };
 		99CEAE4C971EA0022707BE4A /* Pods_ProductHunt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProductHunt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -115,6 +117,7 @@
 			children = (
 				4CCCEB141F47B6B8002CAEFB /* PostsController.swift */,
 				4CCCEB021F479E65002CAEFB /* WebController.swift */,
+				4CECC0D01F48C774002B777E /* CategoriesController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				4CCCEB251F47BFA6002CAEFB /* ImageUrl.swift in Sources */,
 				4CCCEB151F47B6B8002CAEFB /* PostsController.swift in Sources */,
 				4CCCEB241F47BFA6002CAEFB /* CurrentUser.swift in Sources */,
+				4CECC0D11F48C774002B777E /* CategoriesController.swift in Sources */,
 				4CCCEB271F47BFA6002CAEFB /* Posts.swift in Sources */,
 				4CCCEB2A1F47BFA6002CAEFB /* User.swift in Sources */,
 				4CCCEB011F479E65002CAEFB /* AppDelegate.swift in Sources */,

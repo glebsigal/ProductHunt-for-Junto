@@ -16,11 +16,12 @@ class PostsController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.tableFooterView = UIView()
+        self.getFeed()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.getFeed()
+        self.addTitleTapGesture()
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,10 +48,22 @@ class PostsController: UITableViewController {
     func getFeed () {
         apiRouter.getPosts { (posts, error) in
             if error == nil {
-                print(posts?.posts?[0].thumbnail?.imageUrl)
                 self.posts = posts
                 self.tableView.reloadData()
             }
         }
+    }
+    
+    func addTitleTapGesture() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.openCategoriesController))
+        self.navigationController?.navigationBar.addGestureRecognizer(tapGesture)
+    }
+    
+    func openCategoriesController() {
+        self.performSegue(withIdentifier: "toCategoriesController", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        self.navigationController?.navigationBar.gestureRecognizers?.removeAll()
     }
 }
