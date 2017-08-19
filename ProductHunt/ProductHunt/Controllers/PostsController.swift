@@ -18,6 +18,7 @@ class PostsController: UITableViewController, ChooseCategoryProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.tableFooterView = UIView()
+        self.refreshControl?.addTarget(self, action: #selector(self.handleRefresh(refreshControl:)), for: UIControlEvents.valueChanged)
         self.getFeed()
     }
     
@@ -55,6 +56,11 @@ class PostsController: UITableViewController, ChooseCategoryProtocol {
                 self.tableView.reloadData()
             }
         }
+    }
+    
+    func handleRefresh(refreshControl: UIRefreshControl) {
+        self.getFeed()
+        self.refreshControl?.endRefreshing()
     }
     
     func addTitleTapGesture() {
