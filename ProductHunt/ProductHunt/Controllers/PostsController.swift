@@ -8,10 +8,12 @@
 
 import UIKit
 
-class PostsController: UITableViewController {
+class PostsController: UITableViewController, ChooseCategoryProtocol {
 
     private var apiRouter = ApiRouter()
     private var posts: Posts?
+    var slug = "tech"
+    var category = "Tech"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +48,8 @@ class PostsController: UITableViewController {
     }
     
     func getFeed () {
-        apiRouter.getPosts { (posts, error) in
+        self.title = category
+        apiRouter.getPosts(slug: slug) { (posts, error) in
             if error == nil {
                 self.posts = posts
                 self.tableView.reloadData()
@@ -63,7 +66,16 @@ class PostsController: UITableViewController {
         self.performSegue(withIdentifier: "toCategoriesController", sender: self)
     }
     
+    func setCategory(name:String, slug:String) {
+        self.category = name
+        self.slug = slug
+        self.getFeed()
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         self.navigationController?.navigationBar.gestureRecognizers?.removeAll()
+        if let vc = segue.destination as? CategoriesController {
+            vc.delegate = self
+        }
     }
 }
