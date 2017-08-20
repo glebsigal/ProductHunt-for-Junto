@@ -9,6 +9,7 @@ target 'ProductHunt' do
   pod 'Alamofire', '~> 4.4'
   pod 'SwiftyJSON'
   pod 'SDWebImage', '~> 4.0'
+  pod 'SDWebImage/GIF'
   pod 'ObjectMapper', '~> 2.2'
 
 end
