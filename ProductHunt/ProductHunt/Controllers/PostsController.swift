@@ -65,6 +65,7 @@ class PostsController: UITableViewController, ChooseCategoryProtocol {
         }
         cell.name.text = self.posts!.posts![indexPath.section].name
         cell.preview.text = self.posts!.posts![indexPath.section].tagline
+        cell.upVotes.text = self.posts!.posts![indexPath.section].votesCount?.description
         return cell
     }
     
@@ -82,9 +83,8 @@ class PostsController: UITableViewController, ChooseCategoryProtocol {
             cell.layer.transform = CATransform3DMakeScale(1.05,1.05,1)
         },completion: { finished in
             UIView.animate(withDuration: 0.1, animations: {
-//                cell.layer.transform = CATransform3DMakeScale(1,1,1)
-//                cell.layer.cornerRadius = 5
-//                cell.clipsToBounds = true
+                cell.layer.cornerRadius = 20
+                cell.clipsToBounds = true
             })
         })
     }
