@@ -10,6 +10,14 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Text-Regular.ttf">
+            <string>SFUIText-Regular</string>
+        </array>
+        <array key="SF-UI-Text-Semibold.ttf">
+            <string>SFUIText-Semibold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Categories Controller-->
         <scene sceneID="0e2-xr-Mg0">
@@ -24,7 +32,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="R9i-Vy-imk" id="m2L-of-Oif">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -43,7 +51,7 @@
         <scene sceneID="sZw-oq-qnx">
             <objects>
                 <tableViewController id="z7Y-IU-QNl" customClass="PostsController" customModule="ProductHunt" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="85" sectionHeaderHeight="18" sectionFooterHeight="18" id="8i6-94-6q0">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="85" sectionHeaderHeight="18" sectionFooterHeight="18" id="8i6-94-6q0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -52,7 +60,7 @@
                                 <rect key="frame" x="0.0" y="55.5" width="375" height="85"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dH5-mO-FeK" id="nBX-r6-mNW">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="84"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HvL-0B-iBQ" customClass="FLAnimatedImageView">
@@ -62,14 +70,33 @@
                                                 <constraint firstAttribute="width" secondItem="HvL-0B-iBQ" secondAttribute="height" multiplier="1:1" id="qfp-Jq-HYZ"/>
                                             </constraints>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FTn-8O-oPG">
+                                            <rect key="frame" x="76" y="12" width="45.5" height="20"/>
+                                            <fontDescription key="fontDescription" name="SFUIText-Semibold" family="SF UI Text" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPv-xl-LNg">
+                                            <rect key="frame" x="76" y="34" width="291" height="17"/>
+                                            <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="14"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="jPv-xl-LNg" firstAttribute="trailing" secondItem="nBX-r6-mNW" secondAttribute="trailingMargin" id="4K7-V0-Bto"/>
                                         <constraint firstItem="HvL-0B-iBQ" firstAttribute="top" secondItem="nBX-r6-mNW" secondAttribute="topMargin" constant="4" id="M1D-r4-ZTr"/>
+                                        <constraint firstItem="FTn-8O-oPG" firstAttribute="leading" secondItem="HvL-0B-iBQ" secondAttribute="trailing" constant="8" id="SlU-7y-YAz"/>
+                                        <constraint firstItem="jPv-xl-LNg" firstAttribute="leading" secondItem="HvL-0B-iBQ" secondAttribute="trailing" constant="8" id="cML-PO-Kil"/>
                                         <constraint firstItem="HvL-0B-iBQ" firstAttribute="leading" secondItem="nBX-r6-mNW" secondAttribute="leadingMargin" id="dtB-kV-dpI"/>
+                                        <constraint firstItem="jPv-xl-LNg" firstAttribute="top" secondItem="FTn-8O-oPG" secondAttribute="bottom" constant="2" id="eJV-ZT-fip"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="HvL-0B-iBQ" secondAttribute="bottom" constant="4.5" id="fvI-Dg-unn"/>
+                                        <constraint firstItem="FTn-8O-oPG" firstAttribute="top" secondItem="nBX-r6-mNW" secondAttribute="topMargin" constant="4" id="gpu-G3-w94"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="name" destination="FTn-8O-oPG" id="3ea-yd-XTK"/>
+                                    <outlet property="preview" destination="jPv-xl-LNg" id="K9F-vU-H5p"/>
                                     <outlet property="thumbnail" destination="HvL-0B-iBQ" id="WD1-cu-Ij7"/>
                                 </connections>
                             </tableViewCell>
@@ -81,6 +108,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="ZCA-3p-1yE"/>
                     <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="sk3-BH-Rq2">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </refreshControl>
                     <connections>
@@ -104,7 +132,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1uQ-pD-sHa" id="9hE-lp-7Rl">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -141,9 +169,12 @@
         <scene sceneID="Ewb-hf-CmK">
             <objects>
                 <navigationController id="QSt-Ky-Ql1" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8eR-uu-r5N">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="8eR-uu-r5N">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="SFUIText-Semibold" family="SF UI Text" pointSize="20"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="z7Y-IU-QNl" kind="relationship" relationship="rootViewController" id="q0L-hd-Dvx"/>

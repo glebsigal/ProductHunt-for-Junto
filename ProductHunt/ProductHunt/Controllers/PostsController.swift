@@ -19,13 +19,24 @@ class PostsController: UITableViewController, ChooseCategoryProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.tableFooterView = UIView()
-        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.setBottomBorderColor(color: UIColor.lightText, height: 1)
+        self.navigationController?.navigationBar.barTintColor = UIColor(red:0.85, green:0.06, blue:0.16, alpha:1.0)
+        self.navigationController?.navigationBar.titleTextAttributes =
+            [NSForegroundColorAttributeName: UIColor.white,
+             NSFontAttributeName: UIFont(name: "SFUIDisplay-Semibold", size: 18)!]
         self.refreshControl?.addTarget(self, action: #selector(self.handleRefresh(refreshControl:)), for: UIControlEvents.valueChanged)
         self.getFeed()
+        
+        for fontFamilyName in UIFont.familyNames{
+            for fontName in UIFont.fontNames(forFamilyName: fontFamilyName){
+                print("Family: \(fontFamilyName)     Font: \(fontName)")
+            }
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.title = category.uppercased()
         self.addTitleTapGesture()
     }
 
@@ -52,15 +63,33 @@ class PostsController: UITableViewController, ChooseCategoryProtocol {
                 cell.thumbnail.clipsToBounds = true
             }
         }
+        cell.name.text = self.posts!.posts![indexPath.section].name
+        cell.preview.text = self.posts!.posts![indexPath.section].tagline
         return cell
     }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 1
+        if section == 0 {
+            return 25
+        } else {
+            return 1
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.layer.transform = CATransform3DMakeScale(0.1,0.1,1)
+        UIView.animate(withDuration: 0.3, animations: {
+            cell.layer.transform = CATransform3DMakeScale(1.05,1.05,1)
+        },completion: { finished in
+            UIView.animate(withDuration: 0.1, animations: {
+//                cell.layer.transform = CATransform3DMakeScale(1,1,1)
+//                cell.layer.cornerRadius = 5
+//                cell.clipsToBounds = true
+            })
+        })
     }
     
     func getFeed () {
-        self.title = category
         apiRouter.getPosts(slug: slug) { (posts, error) in
             if error == nil {
                 self.posts = posts

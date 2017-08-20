@@ -12,6 +12,8 @@ import SDWebImage
 class PostCell: UITableViewCell {
 
     @IBOutlet var thumbnail: FLAnimatedImageView!
+    @IBOutlet var name: UILabel!
+    @IBOutlet var preview: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
