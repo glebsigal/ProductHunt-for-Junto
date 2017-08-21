@@ -24,6 +24,7 @@ class PostsController: UITableViewController, ChooseCategoryProtocol {
         self.navigationController?.navigationBar.titleTextAttributes =
             [NSForegroundColorAttributeName: UIColor.white,
              NSFontAttributeName: UIFont(name: "SFUIDisplay-Semibold", size: 18)!]
+        self.navigationController?.navigationBar.tintColor = UIColor.white
         self.refreshControl?.addTarget(self, action: #selector(self.handleRefresh(refreshControl:)), for: UIControlEvents.valueChanged)
         self.getFeed()
         
@@ -87,6 +88,10 @@ class PostsController: UITableViewController, ChooseCategoryProtocol {
                 cell.clipsToBounds = true
             })
         })
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "toProductController", sender: self)
     }
     
     func getFeed () {

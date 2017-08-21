@@ -11,6 +11,7 @@
 		4C2C37721F491A7C00C099AC /* SF-UI-Text-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C2C37711F491A7C00C099AC /* SF-UI-Text-Regular.ttf */; };
 		4C2C37741F491B2B00C099AC /* SF-UI-Text-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C2C37731F491B2B00C099AC /* SF-UI-Text-Semibold.ttf */; };
 		4C2C37761F49227C00C099AC /* SF-UI-Display-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C2C37751F49227C00C099AC /* SF-UI-Display-Semibold.ttf */; };
+		4C8927DD1F4A5385002A2524 /* ProductController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8927DC1F4A5385002A2524 /* ProductController.swift */; };
 		4CCCEB011F479E65002CAEFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCCEB001F479E65002CAEFB /* AppDelegate.swift */; };
 		4CCCEB061F479E65002CAEFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CCCEB041F479E65002CAEFB /* Main.storyboard */; };
 		4CCCEB081F479E65002CAEFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CCCEB071F479E65002CAEFB /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 		4C2C37711F491A7C00C099AC /* SF-UI-Text-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Regular.ttf"; path = "../../../../../Downloads/SF Font for Windows/SF-UI-Text-Regular.ttf"; sourceTree = "<group>"; };
 		4C2C37731F491B2B00C099AC /* SF-UI-Text-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Semibold.ttf"; path = "../../../../../Downloads/SF Font for Windows/SF-UI-Text-Semibold.ttf"; sourceTree = "<group>"; };
 		4C2C37751F49227C00C099AC /* SF-UI-Display-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Display-Semibold.ttf"; path = "../../../../../Downloads/SF Font for Windows/SF-UI-Display-Semibold.ttf"; sourceTree = "<group>"; };
+		4C8927DC1F4A5385002A2524 /* ProductController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductController.swift; path = Controllers/ProductController.swift; sourceTree = "<group>"; };
 		4CCCEAFD1F479E65002CAEFB /* ProductHunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductHunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CCCEB001F479E65002CAEFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CCCEB051F479E65002CAEFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				4CECC0E21F48CFC1002B777E /* WebController.swift */,
 				4CCCEB141F47B6B8002CAEFB /* PostsController.swift */,
 				4CECC0D01F48C774002B777E /* CategoriesController.swift */,
+				4C8927DC1F4A5385002A2524 /* ProductController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CECC0E31F48CFC1002B777E /* WebController.swift in Sources */,
+				4C8927DD1F4A5385002A2524 /* ProductController.swift in Sources */,
 				4CECC0E61F48CFEA002B777E /* Categories.swift in Sources */,
 				4CECC0E01F48CFA1002B777E /* User.swift in Sources */,
 				4CCCEB191F47B7D0002CAEFB /* RequestService.swift in Sources */,
