@@ -10,16 +10,16 @@ import UIKit
 import SDWebImage
 
 class PostsController: UITableViewController, ChooseCategoryProtocol {
-
+    
     private var apiRouter = ApiRouter()
     private var posts: Posts?
+    private var choosenPost: Post?
     var slug = "tech"
     var category = "Tech"
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.tableFooterView = UIView()
-        self.navigationController?.navigationBar.setBottomBorderColor(color: UIColor.lightText, height: 1)
         self.navigationController?.navigationBar.barTintColor = UIColor(red:0.85, green:0.06, blue:0.16, alpha:1.0)
         self.navigationController?.navigationBar.titleTextAttributes =
             [NSForegroundColorAttributeName: UIColor.white,
@@ -27,12 +27,6 @@ class PostsController: UITableViewController, ChooseCategoryProtocol {
         self.navigationController?.navigationBar.tintColor = UIColor.white
         self.refreshControl?.addTarget(self, action: #selector(self.handleRefresh(refreshControl:)), for: UIControlEvents.valueChanged)
         self.getFeed()
-        
-        for fontFamilyName in UIFont.familyNames{
-            for fontName in UIFont.fontNames(forFamilyName: fontFamilyName){
-                print("Family: \(fontFamilyName)     Font: \(fontName)")
-            }
-        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -40,18 +34,18 @@ class PostsController: UITableViewController, ChooseCategoryProtocol {
         self.title = category.uppercased()
         self.addTitleTapGesture()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     // MARK: - Table view data source
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return posts?.posts?.count ?? 0
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
@@ -91,6 +85,7 @@ class PostsController: UITableViewController, ChooseCategoryProtocol {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.choosenPost = self.posts!.posts![indexPath.section]
         self.performSegue(withIdentifier: "toProductController", sender: self)
     }
     
@@ -125,8 +120,14 @@ class PostsController: UITableViewController, ChooseCategoryProtocol {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         self.navigationController?.navigationBar.gestureRecognizers?.removeAll()
-        if let vc = segue.destination as? CategoriesController {
-            vc.delegate = self
+        if segue.identifier == "toProductController" {
+            if let vc = segue.destination as? ProductController {
+                vc.post = choosenPost
+            }
+        } else {
+            if let vc = segue.destination as? CategoriesController {
+                vc.delegate = self
+            }
         }
     }
 }

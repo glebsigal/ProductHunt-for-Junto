@@ -31,12 +31,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" id="R9i-Vy-imk">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="categoryCell" textLabel="Kj2-DC-ucG" style="IBUITableViewCellStyleDefault" id="R9i-Vy-imk">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="R9i-Vy-imk" id="m2L-of-Oif">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Kj2-DC-ucG">
+                                            <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -155,10 +164,10 @@
             </objects>
             <point key="canvasLocation" x="1016.8" y="136.28185907046478"/>
         </scene>
-        <!--View Controller-->
+        <!--Product Controller-->
         <scene sceneID="VRq-zA-vYe">
             <objects>
-                <viewController id="hXJ-af-Btc" sceneMemberID="viewController">
+                <viewController id="hXJ-af-Btc" customClass="ProductController" customModule="ProductHunt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dBD-o3-tpZ"/>
                         <viewControllerLayoutGuide type="bottom" id="ubi-mx-EE0"/>
@@ -220,7 +229,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K6t-FG-Kzm">
                                 <rect key="frame" x="0.0" y="607" width="375" height="60"/>
-                                <color key="backgroundColor" red="0.84705882352941175" green="0.058823529411764705" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.32227532800000003" green="0.59591564119999996" blue="0.31365578649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="9s9-hg-LRD"/>
                                 </constraints>
@@ -228,6 +237,9 @@
                                 <state key="normal" title="GET IT">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="openUrl" destination="hXJ-af-Btc" eventType="touchUpInside" id="2Zs-UA-bbE"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -255,15 +267,25 @@
                             <constraint firstItem="5qR-qD-mMQ" firstAttribute="top" secondItem="xG9-2k-IyD" secondAttribute="bottom" constant="2" id="zn3-bc-swM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="authorHeadLine" destination="ffz-zE-Ifh" id="z2I-aP-9Ve"/>
+                        <outlet property="authorImage" destination="qLH-x7-MsI" id="f0v-KW-xDa"/>
+                        <outlet property="authorName" destination="OTo-pm-Rgg" id="wHl-5O-wVu"/>
+                        <outlet property="productImage" destination="zxr-4z-LeN" id="oAe-wk-Gnm"/>
+                        <outlet property="productName" destination="xG9-2k-IyD" id="dLI-N9-vIf"/>
+                        <outlet property="productText" destination="5qR-qD-mMQ" id="0Tk-vl-Rhr"/>
+                        <outlet property="upvoteText" destination="Nf1-SL-aaP" id="hbR-Nf-Eai"/>
+                        <segue destination="PmZ-a2-6MZ" kind="show" identifier="toWebController" id="mjV-fr-0Dd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jPa-z7-N1t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1789.5999999999999" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Web Controller-->
         <scene sceneID="hwR-FM-h1h">
             <objects>
-                <viewController id="PmZ-a2-6MZ" sceneMemberID="viewController">
+                <viewController id="PmZ-a2-6MZ" customClass="WebController" customModule="ProductHunt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AUh-GW-AHR"/>
                         <viewControllerLayoutGuide type="bottom" id="y9Z-zz-xZh"/>
@@ -271,12 +293,27 @@
                     <view key="view" contentMode="scaleToFill" id="hd8-vr-qn5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QCE-kr-JXK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QCE-kr-JXK" firstAttribute="leading" secondItem="hd8-vr-qn5" secondAttribute="leading" id="Hcc-Jq-OXu"/>
+                            <constraint firstAttribute="trailing" secondItem="QCE-kr-JXK" secondAttribute="trailing" id="LMf-9i-fQB"/>
+                            <constraint firstItem="QCE-kr-JXK" firstAttribute="top" secondItem="hd8-vr-qn5" secondAttribute="top" id="f7d-Ww-3og"/>
+                            <constraint firstItem="QCE-kr-JXK" firstAttribute="bottom" secondItem="y9Z-zz-xZh" secondAttribute="top" id="n0V-vo-LyY"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="QCE-kr-JXK" id="ykO-Ev-YVA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xli-1B-Q51" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2505" y="135"/>
+            <point key="canvasLocation" x="2504.8000000000002" y="134.48275862068968"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ewb-hf-CmK">

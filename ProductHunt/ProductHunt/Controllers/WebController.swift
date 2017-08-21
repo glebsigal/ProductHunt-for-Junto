@@ -1,17 +1,21 @@
 //
-//  ViewController.swift
+//  WebController.swift
 //  ProductHunt
 //
-//  Created by Gleb Sigal on 19.08.17.
+//  Created by Gleb Sigal on 21.08.17.
 //  Copyright © 2017 Gleb Sigal. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class WebController: UIViewController {
 
+    @IBOutlet var webView : UIWebView!
+    var url: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.webView.loadRequest(URLRequest(url: URL(string: url)!))
         // Do any additional setup after loading the view, typically from a nib.
     }
 
