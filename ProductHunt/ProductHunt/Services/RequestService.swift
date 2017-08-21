@@ -30,7 +30,6 @@ class RequestService {
                 case .success(let value):
                     completionHandler(value as? NSDictionary, nil)
                 case .failure(let error):
-                    print(error.localizedDescription)
                     completionHandler(nil, error as NSError?)
                 }
             }

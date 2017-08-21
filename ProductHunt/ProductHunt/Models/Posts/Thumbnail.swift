@@ -10,16 +10,11 @@ class Thumbnail : Mappable{
 
 	var id : Int?
 	var imageUrl : String?
-	var mediaType : String?
-	var metadata : CurrentUser?
 
 	func mapping(map: Map)
 	{
 		id <- map["id"]
 		imageUrl <- map["image_url"]
-		mediaType <- map["media_type"]
-		metadata <- map["metadata"]
-		
 	}
     
     required init?(map: Map) {}

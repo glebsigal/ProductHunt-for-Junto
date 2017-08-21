@@ -10,7 +10,6 @@ class Posts : Mappable{
 
 	var posts : [Post]?
 
-
 	func mapping(map: Map)
 	{
 		posts <- map["posts"]

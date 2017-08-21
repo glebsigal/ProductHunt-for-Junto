@@ -20,7 +20,6 @@
 		4CCCEB191F47B7D0002CAEFB /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCCEB181F47B7D0002CAEFB /* RequestService.swift */; };
 		4CCCEB1B1F47BADD002CAEFB /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCCEB1A1F47BADD002CAEFB /* ApiRouter.swift */; };
 		4CECC0D11F48C774002B777E /* CategoriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CECC0D01F48C774002B777E /* CategoriesController.swift */; };
-		4CECC0DA1F48CFA1002B777E /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CECC0D31F48CFA1002B777E /* CurrentUser.swift */; };
 		4CECC0DB1F48CFA1002B777E /* ImageUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CECC0D41F48CFA1002B777E /* ImageUrl.swift */; };
 		4CECC0DC1F48CFA1002B777E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CECC0D51F48CFA1002B777E /* Post.swift */; };
 		4CECC0DD1F48CFA1002B777E /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CECC0D61F48CFA1002B777E /* Posts.swift */; };
@@ -31,7 +30,6 @@
 		4CECC0E61F48CFEA002B777E /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CECC0E41F48CFEA002B777E /* Categories.swift */; };
 		4CECC0E71F48CFEA002B777E /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CECC0E51F48CFEA002B777E /* Category.swift */; };
 		4CECC0EA1F48FF69002B777E /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CECC0E91F48FF69002B777E /* PostCell.swift */; };
-		4CECC0ED1F490EA5002B777E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CECC0EC1F490EA5002B777E /* Extensions.swift */; };
 		EF910DA125D3C028F4A97A4F /* Pods_ProductHunt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CEAE4C971EA0022707BE4A /* Pods_ProductHunt.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +51,6 @@
 		4CCCEB181F47B7D0002CAEFB /* RequestService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestService.swift; path = Services/RequestService.swift; sourceTree = "<group>"; };
 		4CCCEB1A1F47BADD002CAEFB /* ApiRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiRouter.swift; path = Services/ApiRouter.swift; sourceTree = "<group>"; };
 		4CECC0D01F48C774002B777E /* CategoriesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoriesController.swift; path = Controllers/CategoriesController.swift; sourceTree = "<group>"; };
-		4CECC0D31F48CFA1002B777E /* CurrentUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurrentUser.swift; path = Models/Posts/CurrentUser.swift; sourceTree = "<group>"; };
 		4CECC0D41F48CFA1002B777E /* ImageUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageUrl.swift; path = Models/Posts/ImageUrl.swift; sourceTree = "<group>"; };
 		4CECC0D51F48CFA1002B777E /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Post.swift; path = Models/Posts/Post.swift; sourceTree = "<group>"; };
 		4CECC0D61F48CFA1002B777E /* Posts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Posts.swift; path = Models/Posts/Posts.swift; sourceTree = "<group>"; };
@@ -64,7 +61,6 @@
 		4CECC0E41F48CFEA002B777E /* Categories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Categories.swift; path = Models/Categories/Categories.swift; sourceTree = "<group>"; };
 		4CECC0E51F48CFEA002B777E /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Category.swift; path = Models/Categories/Category.swift; sourceTree = "<group>"; };
 		4CECC0E91F48FF69002B777E /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostCell.swift; path = Views/PostCell.swift; sourceTree = "<group>"; };
-		4CECC0EC1F490EA5002B777E /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Extensions/Extensions.swift; sourceTree = "<group>"; };
 		99CEAE4C971EA0022707BE4A /* Pods_ProductHunt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProductHunt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -123,7 +119,6 @@
 				4CCCEB171F47B791002CAEFB /* Services */,
 				4CCCEB161F47B6C1002CAEFB /* Controllers */,
 				4CECC0E81F48FF3F002B777E /* Views */,
-				4CECC0EB1F490E7A002B777E /* Extensions */,
 				4CCCEB001F479E65002CAEFB /* AppDelegate.swift */,
 				4CCCEB041F479E65002CAEFB /* Main.storyboard */,
 				4CCCEB071F479E65002CAEFB /* Assets.xcassets */,
@@ -165,7 +160,6 @@
 		4CECC0D21F48CEEE002B777E /* Posts */ = {
 			isa = PBXGroup;
 			children = (
-				4CECC0D31F48CFA1002B777E /* CurrentUser.swift */,
 				4CECC0D41F48CFA1002B777E /* ImageUrl.swift */,
 				4CECC0D51F48CFA1002B777E /* Post.swift */,
 				4CECC0D61F48CFA1002B777E /* Posts.swift */,
@@ -191,14 +185,6 @@
 				4CECC0E91F48FF69002B777E /* PostCell.swift */,
 			);
 			name = Views;
-			sourceTree = "<group>";
-		};
-		4CECC0EB1F490E7A002B777E /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				4CECC0EC1F490EA5002B777E /* Extensions.swift */,
-			);
-			name = Extensions;
 			sourceTree = "<group>";
 		};
 		4CECC0EE1F4919B2002B777E /* Fonts */ = {
@@ -377,11 +363,9 @@
 				4CCCEB1B1F47BADD002CAEFB /* ApiRouter.swift in Sources */,
 				4CCCEB151F47B6B8002CAEFB /* PostsController.swift in Sources */,
 				4CECC0D11F48C774002B777E /* CategoriesController.swift in Sources */,
-				4CECC0DA1F48CFA1002B777E /* CurrentUser.swift in Sources */,
 				4CECC0DC1F48CFA1002B777E /* Post.swift in Sources */,
 				4CECC0E71F48CFEA002B777E /* Category.swift in Sources */,
 				4CECC0DD1F48CFA1002B777E /* Posts.swift in Sources */,
-				4CECC0ED1F490EA5002B777E /* Extensions.swift in Sources */,
 				4CCCEB011F479E65002CAEFB /* AppDelegate.swift in Sources */,
 				4CECC0DB1F48CFA1002B777E /* ImageUrl.swift in Sources */,
 				4CECC0EA1F48FF69002B777E /* PostCell.swift in Sources */,

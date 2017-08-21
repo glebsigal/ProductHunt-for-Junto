@@ -20,14 +20,13 @@ class CategoriesController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Категории"
+        self.title = "Categories"
         self.tableView.tableFooterView = UIView()
         self.getCategories()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     // MARK: - Table view data source
