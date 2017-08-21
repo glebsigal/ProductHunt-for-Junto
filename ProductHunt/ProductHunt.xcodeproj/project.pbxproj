@@ -11,12 +11,12 @@
 		4C2C37721F491A7C00C099AC /* SF-UI-Text-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C2C37711F491A7C00C099AC /* SF-UI-Text-Regular.ttf */; };
 		4C2C37741F491B2B00C099AC /* SF-UI-Text-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C2C37731F491B2B00C099AC /* SF-UI-Text-Semibold.ttf */; };
 		4C2C37761F49227C00C099AC /* SF-UI-Display-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C2C37751F49227C00C099AC /* SF-UI-Display-Semibold.ttf */; };
-		4C8927DD1F4A5385002A2524 /* ProductController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8927DC1F4A5385002A2524 /* ProductController.swift */; };
+		4C8927DD1F4A5385002A2524 /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8927DC1F4A5385002A2524 /* PostController.swift */; };
 		4CCCEB011F479E65002CAEFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCCEB001F479E65002CAEFB /* AppDelegate.swift */; };
 		4CCCEB061F479E65002CAEFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CCCEB041F479E65002CAEFB /* Main.storyboard */; };
 		4CCCEB081F479E65002CAEFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CCCEB071F479E65002CAEFB /* Assets.xcassets */; };
 		4CCCEB0B1F479E65002CAEFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CCCEB091F479E65002CAEFB /* LaunchScreen.storyboard */; };
-		4CCCEB151F47B6B8002CAEFB /* PostsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCCEB141F47B6B8002CAEFB /* PostsController.swift */; };
+		4CCCEB151F47B6B8002CAEFB /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCCEB141F47B6B8002CAEFB /* FeedController.swift */; };
 		4CCCEB191F47B7D0002CAEFB /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCCEB181F47B7D0002CAEFB /* RequestService.swift */; };
 		4CCCEB1B1F47BADD002CAEFB /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCCEB1A1F47BADD002CAEFB /* ApiRouter.swift */; };
 		4CECC0D11F48C774002B777E /* CategoriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CECC0D01F48C774002B777E /* CategoriesController.swift */; };
@@ -40,14 +40,14 @@
 		4C2C37711F491A7C00C099AC /* SF-UI-Text-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Regular.ttf"; path = "../../../../../Downloads/SF Font for Windows/SF-UI-Text-Regular.ttf"; sourceTree = "<group>"; };
 		4C2C37731F491B2B00C099AC /* SF-UI-Text-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Semibold.ttf"; path = "../../../../../Downloads/SF Font for Windows/SF-UI-Text-Semibold.ttf"; sourceTree = "<group>"; };
 		4C2C37751F49227C00C099AC /* SF-UI-Display-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Display-Semibold.ttf"; path = "../../../../../Downloads/SF Font for Windows/SF-UI-Display-Semibold.ttf"; sourceTree = "<group>"; };
-		4C8927DC1F4A5385002A2524 /* ProductController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductController.swift; path = Controllers/ProductController.swift; sourceTree = "<group>"; };
+		4C8927DC1F4A5385002A2524 /* PostController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostController.swift; path = Controllers/PostController.swift; sourceTree = "<group>"; };
 		4CCCEAFD1F479E65002CAEFB /* ProductHunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductHunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CCCEB001F479E65002CAEFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CCCEB051F479E65002CAEFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4CCCEB071F479E65002CAEFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CCCEB0A1F479E65002CAEFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CCCEB0C1F479E65002CAEFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4CCCEB141F47B6B8002CAEFB /* PostsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostsController.swift; path = Controllers/PostsController.swift; sourceTree = "<group>"; };
+		4CCCEB141F47B6B8002CAEFB /* FeedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedController.swift; path = Controllers/FeedController.swift; sourceTree = "<group>"; };
 		4CCCEB181F47B7D0002CAEFB /* RequestService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestService.swift; path = Services/RequestService.swift; sourceTree = "<group>"; };
 		4CCCEB1A1F47BADD002CAEFB /* ApiRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiRouter.swift; path = Services/ApiRouter.swift; sourceTree = "<group>"; };
 		4CECC0D01F48C774002B777E /* CategoriesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoriesController.swift; path = Controllers/CategoriesController.swift; sourceTree = "<group>"; };
@@ -132,8 +132,8 @@
 			isa = PBXGroup;
 			children = (
 				4CECC0D01F48C774002B777E /* CategoriesController.swift */,
-				4CCCEB141F47B6B8002CAEFB /* PostsController.swift */,
-				4C8927DC1F4A5385002A2524 /* ProductController.swift */,
+				4CCCEB141F47B6B8002CAEFB /* FeedController.swift */,
+				4C8927DC1F4A5385002A2524 /* PostController.swift */,
 				4CECC0E21F48CFC1002B777E /* WebController.swift */,
 			);
 			name = Controllers;
@@ -303,7 +303,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "";
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
 		};
 		92D6F7C9500A53C4BB3BF910 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -329,6 +329,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-ProductHunt/Pods-ProductHunt-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
@@ -337,6 +338,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
@@ -354,14 +356,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CECC0E31F48CFC1002B777E /* WebController.swift in Sources */,
-				4C8927DD1F4A5385002A2524 /* ProductController.swift in Sources */,
+				4C8927DD1F4A5385002A2524 /* PostController.swift in Sources */,
 				4CECC0E61F48CFEA002B777E /* Categories.swift in Sources */,
 				4CECC0E01F48CFA1002B777E /* User.swift in Sources */,
 				4CCCEB191F47B7D0002CAEFB /* RequestService.swift in Sources */,
 				4CECC0DF1F48CFA1002B777E /* Thumbnail.swift in Sources */,
 				4CECC0DE1F48CFA1002B777E /* ScreenshotUrl.swift in Sources */,
 				4CCCEB1B1F47BADD002CAEFB /* ApiRouter.swift in Sources */,
-				4CCCEB151F47B6B8002CAEFB /* PostsController.swift in Sources */,
+				4CCCEB151F47B6B8002CAEFB /* FeedController.swift in Sources */,
 				4CECC0D11F48C774002B777E /* CategoriesController.swift in Sources */,
 				4CECC0DC1F48CFA1002B777E /* Post.swift in Sources */,
 				4CECC0E71F48CFEA002B777E /* Category.swift in Sources */,

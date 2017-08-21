@@ -57,12 +57,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NTT-de-5Dq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1017" y="-506"/>
+            <point key="canvasLocation" x="1017" y="-619"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="sZw-oq-qnx">
             <objects>
-                <tableViewController id="z7Y-IU-QNl" customClass="PostsController" customModule="ProductHunt" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="z7Y-IU-QNl" customClass="FeedController" customModule="ProductHunt" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="85" sectionHeaderHeight="18" sectionFooterHeight="18" id="8i6-94-6q0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -164,10 +164,10 @@
             </objects>
             <point key="canvasLocation" x="1016.8" y="136.28185907046478"/>
         </scene>
-        <!--Product Controller-->
+        <!--Post Controller-->
         <scene sceneID="VRq-zA-vYe">
             <objects>
-                <viewController id="hXJ-af-Btc" customClass="ProductController" customModule="ProductHunt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hXJ-af-Btc" customClass="PostController" customModule="ProductHunt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dBD-o3-tpZ"/>
                         <viewControllerLayoutGuide type="bottom" id="ubi-mx-EE0"/>
@@ -179,18 +179,17 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zxr-4z-LeN">
                                 <rect key="frame" x="0.0" y="136" width="375" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="kTm-J9-3Uh"/>
                                     <constraint firstAttribute="height" constant="200" id="r2Q-FP-G5w"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Surname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTo-pm-Rgg">
-                                <rect key="frame" x="74" y="77" width="123" height="21"/>
+                                <rect key="frame" x="74" y="77" width="285" height="20"/>
                                 <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Head Line" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffz-zE-Ifh">
-                                <rect key="frame" x="74" y="99" width="71.5" height="18"/>
+                                <rect key="frame" x="74" y="98" width="285" height="18"/>
                                 <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="15"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -203,26 +202,26 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xG9-2k-IyD">
-                                <rect key="frame" x="16" y="344" width="85" height="21"/>
+                                <rect key="frame" x="16" y="344" width="84.5" height="20"/>
                                 <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5qR-qD-mMQ">
-                                <rect key="frame" x="16" y="367" width="343" height="18"/>
+                                <rect key="frame" x="16" y="366" width="343" height="18"/>
                                 <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="15"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upvote" translatesAutoresizingMaskIntoConstraints="NO" id="N5G-eS-tnj">
-                                <rect key="frame" x="16" y="393" width="25" height="25"/>
+                                <rect key="frame" x="16" y="392" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="fic-Ef-opP"/>
                                     <constraint firstAttribute="width" constant="25" id="vru-Ar-8gr"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nf1-SL-aaP">
-                                <rect key="frame" x="43" y="397" width="23.5" height="17"/>
+                                <rect key="frame" x="43" y="396" width="23.5" height="17"/>
                                 <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="14"/>
                                 <color key="textColor" red="0.32227532800000003" green="0.59591564119999996" blue="0.31365578649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -256,11 +255,13 @@
                             <constraint firstItem="xG9-2k-IyD" firstAttribute="top" secondItem="zxr-4z-LeN" secondAttribute="bottom" constant="8" id="SWh-5C-mmP"/>
                             <constraint firstItem="ffz-zE-Ifh" firstAttribute="leading" secondItem="qLH-x7-MsI" secondAttribute="trailing" constant="8" id="WFk-Sn-UaR"/>
                             <constraint firstItem="OTo-pm-Rgg" firstAttribute="leading" secondItem="qLH-x7-MsI" secondAttribute="trailing" constant="8" id="caX-2d-Ifj"/>
+                            <constraint firstItem="OTo-pm-Rgg" firstAttribute="trailing" secondItem="MwD-Qq-e6B" secondAttribute="trailingMargin" id="coc-4P-BWf"/>
                             <constraint firstItem="ubi-mx-EE0" firstAttribute="top" secondItem="K6t-FG-Kzm" secondAttribute="bottom" id="hpu-vH-u7L"/>
                             <constraint firstItem="ffz-zE-Ifh" firstAttribute="top" secondItem="OTo-pm-Rgg" secondAttribute="bottom" constant="1" id="jaj-np-xlf"/>
                             <constraint firstItem="N5G-eS-tnj" firstAttribute="top" secondItem="5qR-qD-mMQ" secondAttribute="bottom" constant="8" id="lBS-M8-0Rl"/>
                             <constraint firstItem="qLH-x7-MsI" firstAttribute="leading" secondItem="MwD-Qq-e6B" secondAttribute="leadingMargin" id="pEF-HU-xAD"/>
                             <constraint firstAttribute="trailing" secondItem="K6t-FG-Kzm" secondAttribute="trailing" id="pMG-4q-YtX"/>
+                            <constraint firstItem="ffz-zE-Ifh" firstAttribute="trailing" secondItem="MwD-Qq-e6B" secondAttribute="trailingMargin" id="sam-4l-TDz"/>
                             <constraint firstItem="xG9-2k-IyD" firstAttribute="leading" secondItem="MwD-Qq-e6B" secondAttribute="leadingMargin" id="vnr-7p-Kev"/>
                             <constraint firstItem="qLH-x7-MsI" firstAttribute="top" secondItem="dBD-o3-tpZ" secondAttribute="bottom" constant="8" id="wbG-Ap-OaY"/>
                             <constraint firstItem="zxr-4z-LeN" firstAttribute="top" secondItem="qLH-x7-MsI" secondAttribute="bottom" constant="14" id="yAY-yX-MVz"/>
@@ -319,9 +320,8 @@
         <scene sceneID="Ewb-hf-CmK">
             <objects>
                 <navigationController id="QSt-Ky-Ql1" sceneMemberID="viewController">
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="667"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="8eR-uu-r5N">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8eR-uu-r5N">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">

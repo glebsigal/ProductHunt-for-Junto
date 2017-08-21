@@ -15,7 +15,7 @@ class PostCell: UITableViewCell {
     @IBOutlet var name: UILabel!
     @IBOutlet var preview: UILabel!
     @IBOutlet var upVotes: UILabel!
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
     }

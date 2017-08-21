@@ -12,7 +12,7 @@ import SwiftyJSON
 typealias RequestBasicCompletionHandler = (_ response: NSDictionary?, _ error: NSError?) -> Void
 
 class RequestService {
-    
+
     let applicationBaseURL = "https://api.producthunt.com/v1/"
     let headers: HTTPHeaders = [
         "Accept": "application/json",
@@ -20,7 +20,7 @@ class RequestService {
         "Authorization": "Bearer 591f99547f569b05ba7d8777e2e0824eea16c440292cce1f8dfb3952cc9937ff",
         "Host": "api.producthunt.com"
     ]
-    
+
     func sendRequest(endPoint: String, completionHandler: @escaping RequestBasicCompletionHandler) {
         let url = applicationBaseURL + endPoint
         Alamofire.request(url, method: .get, headers: headers)

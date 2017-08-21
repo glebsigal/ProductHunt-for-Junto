@@ -10,16 +10,12 @@ import UIKit
 
 class WebController: UIViewController {
 
-    @IBOutlet var webView : UIWebView!
-    var url: String!
-    
+    @IBOutlet var webView: UIWebView!
+
+    var redirectUrl: String!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.webView.loadRequest(URLRequest(url: URL(string: url)!))
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+        self.webView.loadRequest(URLRequest(url: URL(string: redirectUrl)!))
     }
 }
-

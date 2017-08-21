@@ -2,20 +2,17 @@
 //	Category.swift
 //	Model file generated using JSONExport: https://github.com/Ahmed-Ali/JSONExport
 
-import Foundation 
 import ObjectMapper
 
+class Category: Mappable {
 
-class Category : Mappable{
+	var name: String?
+	var slug: String?
 
-	var name : String?
-	var slug : String?
-
-	func mapping(map: Map)
-	{
+	func mapping(map: Map) {
 		name <- map["name"]
 		slug <- map["slug"]
 	}
-    
+
     required init?(map: Map) {}
 }
