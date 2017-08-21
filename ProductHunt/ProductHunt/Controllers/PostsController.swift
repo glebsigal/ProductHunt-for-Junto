@@ -20,13 +20,7 @@ class PostsController: UITableViewController, ChooseCategoryProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.tableFooterView = UIView()
-        self.navigationController?.navigationBar.barTintColor = UIColor(red:0.85, green:0.06, blue:0.16, alpha:1.0)
-        self.navigationController?.navigationBar.titleTextAttributes =
-            [NSForegroundColorAttributeName: UIColor.white,
-             NSFontAttributeName: UIFont(name: "SFUIDisplay-Semibold", size: 18)!]
-        self.navigationController?.navigationBar.tintColor = UIColor.white
-        self.refreshControl?.addTarget(self, action: #selector(self.handleRefresh(refreshControl:)), for: UIControlEvents.valueChanged)
+        self.initUI()
         self.getFeed()
         self.getCategories()
     }
@@ -37,10 +31,15 @@ class PostsController: UITableViewController, ChooseCategoryProtocol {
         self.addTitleTapGesture()
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    func initUI() {
+        self.tableView.tableFooterView = UIView()
+        self.navigationController?.navigationBar.barTintColor = UIColor(red:0.85, green:0.06, blue:0.16, alpha:1.0)
+        self.navigationController?.navigationBar.titleTextAttributes =
+            [NSForegroundColorAttributeName: UIColor.white,
+             NSFontAttributeName: UIFont(name: "SFUIDisplay-Semibold", size: 18)!]
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+        self.refreshControl?.addTarget(self, action: #selector(self.handleRefresh(refreshControl:)), for: UIControlEvents.valueChanged)
     }
-    
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -76,7 +75,7 @@ class PostsController: UITableViewController, ChooseCategoryProtocol {
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         cell.layer.transform = CATransform3DMakeScale(0.1,0.1,1)
         UIView.animate(withDuration: 0.3, animations: {
-            cell.layer.transform = CATransform3DMakeScale(1.05,1.05,1)
+            cell.layer.transform = CATransform3DMakeScale(1,1,1)
         },completion: { finished in
             UIView.animate(withDuration: 0.1, animations: {
                 cell.layer.cornerRadius = 20
