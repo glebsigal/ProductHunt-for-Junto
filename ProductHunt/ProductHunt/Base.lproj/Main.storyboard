@@ -81,8 +81,8 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HvL-0B-iBQ" customClass="FLAnimatedImageView">
                                                     <rect key="frame" x="10" y="13" width="60" height="60"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="width" constant="60" id="aO9-Qe-5IF"/>
                                                         <constraint firstAttribute="height" constant="60" id="hFh-qN-ssU"/>
-                                                        <constraint firstAttribute="width" secondItem="HvL-0B-iBQ" secondAttribute="height" multiplier="1:1" id="owN-ln-Fd4"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FTn-8O-oPG">
@@ -319,7 +319,9 @@
         <scene sceneID="Ewb-hf-CmK">
             <objects>
                 <navigationController id="QSt-Ky-Ql1" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="8eR-uu-r5N">
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8eR-uu-r5N">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
