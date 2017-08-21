@@ -11,5 +11,6 @@ target 'ProductHunt' do
   pod 'SDWebImage', '~> 4.0'
   pod 'SDWebImage/GIF'
   pod 'ObjectMapper', '~> 2.2'
+  pod 'SwiftLint'
 
 end
