@@ -15,14 +15,13 @@ protocol ChooseCategoryProtocol {
 class CategoriesController: UITableViewController {
 
     private var apiRouter = ApiRouter()
-    private var categories: Categories?
+    var categories: Categories?
     var delegate : ChooseCategoryProtocol!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Categories"
         self.tableView.tableFooterView = UIView()
-        self.getCategories()
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,15 +51,5 @@ class CategoriesController: UITableViewController {
         delegate.setCategory(name: categories!.categories![indexPath.row].name!,
                              slug: categories!.categories![indexPath.row].slug!)
         self.navigationController?.popViewController(animated: true)
-    }
- 
-    
-    func getCategories () {
-        apiRouter.getCategories { (categories, error) in
-            if error == nil {
-                self.categories = categories
-                self.tableView.reloadData()
-            }
-        }
     }
 }

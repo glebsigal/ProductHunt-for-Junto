@@ -14,6 +14,7 @@ class PostsController: UITableViewController, ChooseCategoryProtocol {
     private var apiRouter = ApiRouter()
     private var posts: Posts?
     private var choosenPost: Post?
+    private var categories: Categories?
     var slug = "tech"
     var category = "Tech"
     
@@ -27,6 +28,7 @@ class PostsController: UITableViewController, ChooseCategoryProtocol {
         self.navigationController?.navigationBar.tintColor = UIColor.white
         self.refreshControl?.addTarget(self, action: #selector(self.handleRefresh(refreshControl:)), for: UIControlEvents.valueChanged)
         self.getFeed()
+        self.getCategories()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -97,8 +99,17 @@ class PostsController: UITableViewController, ChooseCategoryProtocol {
         }
     }
     
+    func getCategories () {
+        apiRouter.getCategories { (categories, error) in
+            if error == nil {
+                self.categories = categories
+            }
+        }
+    }
+    
     func handleRefresh(refreshControl: UIRefreshControl) {
         self.getFeed()
+        self.getCategories()
         self.refreshControl?.endRefreshing()
     }
     
@@ -126,6 +137,7 @@ class PostsController: UITableViewController, ChooseCategoryProtocol {
         } else {
             if let vc = segue.destination as? CategoriesController {
                 vc.delegate = self
+                vc.categories = self.categories
             }
         }
     }
