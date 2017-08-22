@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C2C37701F491A7200C099AC /* SF-UI-Display-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C2C376F1F491A7200C099AC /* SF-UI-Display-Regular.ttf */; };
-		4C2C37721F491A7C00C099AC /* SF-UI-Text-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C2C37711F491A7C00C099AC /* SF-UI-Text-Regular.ttf */; };
-		4C2C37741F491B2B00C099AC /* SF-UI-Text-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C2C37731F491B2B00C099AC /* SF-UI-Text-Semibold.ttf */; };
-		4C2C37761F49227C00C099AC /* SF-UI-Display-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C2C37751F49227C00C099AC /* SF-UI-Display-Semibold.ttf */; };
 		4C8927DD1F4A5385002A2524 /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8927DC1F4A5385002A2524 /* PostController.swift */; };
+		4CC2F9EE1F4BBE840068A3AB /* SF-UI-Display-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CC2F9EA1F4BBE840068A3AB /* SF-UI-Display-Regular.ttf */; };
+		4CC2F9EF1F4BBE840068A3AB /* SF-UI-Display-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CC2F9EB1F4BBE840068A3AB /* SF-UI-Display-Semibold.ttf */; };
+		4CC2F9F01F4BBE840068A3AB /* SF-UI-Text-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CC2F9EC1F4BBE840068A3AB /* SF-UI-Text-Regular.ttf */; };
+		4CC2F9F11F4BBE840068A3AB /* SF-UI-Text-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CC2F9ED1F4BBE840068A3AB /* SF-UI-Text-Semibold.ttf */; };
 		4CCCEB011F479E65002CAEFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCCEB001F479E65002CAEFB /* AppDelegate.swift */; };
 		4CCCEB061F479E65002CAEFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CCCEB041F479E65002CAEFB /* Main.storyboard */; };
 		4CCCEB081F479E65002CAEFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CCCEB071F479E65002CAEFB /* Assets.xcassets */; };
@@ -36,11 +36,11 @@
 /* Begin PBXFileReference section */
 		31D03D6555AF82DF5D13561A /* Pods-ProductHunt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProductHunt.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProductHunt/Pods-ProductHunt.release.xcconfig"; sourceTree = "<group>"; };
 		40BC9F3BD8EDC9E3282BDD23 /* Pods-ProductHunt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProductHunt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProductHunt/Pods-ProductHunt.debug.xcconfig"; sourceTree = "<group>"; };
-		4C2C376F1F491A7200C099AC /* SF-UI-Display-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Display-Regular.ttf"; path = "../../../../../Downloads/SF Font for Windows/SF-UI-Display-Regular.ttf"; sourceTree = "<group>"; };
-		4C2C37711F491A7C00C099AC /* SF-UI-Text-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Regular.ttf"; path = "../../../../../Downloads/SF Font for Windows/SF-UI-Text-Regular.ttf"; sourceTree = "<group>"; };
-		4C2C37731F491B2B00C099AC /* SF-UI-Text-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Semibold.ttf"; path = "../../../../../Downloads/SF Font for Windows/SF-UI-Text-Semibold.ttf"; sourceTree = "<group>"; };
-		4C2C37751F49227C00C099AC /* SF-UI-Display-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Display-Semibold.ttf"; path = "../../../../../Downloads/SF Font for Windows/SF-UI-Display-Semibold.ttf"; sourceTree = "<group>"; };
 		4C8927DC1F4A5385002A2524 /* PostController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostController.swift; path = Controllers/PostController.swift; sourceTree = "<group>"; };
+		4CC2F9EA1F4BBE840068A3AB /* SF-UI-Display-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Display-Regular.ttf"; path = "Fonts/SF-UI-Display-Regular.ttf"; sourceTree = "<group>"; };
+		4CC2F9EB1F4BBE840068A3AB /* SF-UI-Display-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Display-Semibold.ttf"; path = "Fonts/SF-UI-Display-Semibold.ttf"; sourceTree = "<group>"; };
+		4CC2F9EC1F4BBE840068A3AB /* SF-UI-Text-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Regular.ttf"; path = "Fonts/SF-UI-Text-Regular.ttf"; sourceTree = "<group>"; };
+		4CC2F9ED1F4BBE840068A3AB /* SF-UI-Text-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Semibold.ttf"; path = "Fonts/SF-UI-Text-Semibold.ttf"; sourceTree = "<group>"; };
 		4CCCEAFD1F479E65002CAEFB /* ProductHunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductHunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CCCEB001F479E65002CAEFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CCCEB051F479E65002CAEFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -190,10 +190,10 @@
 		4CECC0EE1F4919B2002B777E /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				4C2C376F1F491A7200C099AC /* SF-UI-Display-Regular.ttf */,
-				4C2C37751F49227C00C099AC /* SF-UI-Display-Semibold.ttf */,
-				4C2C37731F491B2B00C099AC /* SF-UI-Text-Semibold.ttf */,
-				4C2C37711F491A7C00C099AC /* SF-UI-Text-Regular.ttf */,
+				4CC2F9EA1F4BBE840068A3AB /* SF-UI-Display-Regular.ttf */,
+				4CC2F9EB1F4BBE840068A3AB /* SF-UI-Display-Semibold.ttf */,
+				4CC2F9EC1F4BBE840068A3AB /* SF-UI-Text-Regular.ttf */,
+				4CC2F9ED1F4BBE840068A3AB /* SF-UI-Text-Semibold.ttf */,
 			);
 			name = Fonts;
 			sourceTree = "<group>";
@@ -262,12 +262,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CCCEB0B1F479E65002CAEFB /* LaunchScreen.storyboard in Resources */,
-				4C2C37701F491A7200C099AC /* SF-UI-Display-Regular.ttf in Resources */,
-				4C2C37761F49227C00C099AC /* SF-UI-Display-Semibold.ttf in Resources */,
-				4C2C37721F491A7C00C099AC /* SF-UI-Text-Regular.ttf in Resources */,
-				4C2C37741F491B2B00C099AC /* SF-UI-Text-Semibold.ttf in Resources */,
 				4CCCEB081F479E65002CAEFB /* Assets.xcassets in Resources */,
+				4CC2F9F11F4BBE840068A3AB /* SF-UI-Text-Semibold.ttf in Resources */,
+				4CC2F9EF1F4BBE840068A3AB /* SF-UI-Display-Semibold.ttf in Resources */,
+				4CC2F9F01F4BBE840068A3AB /* SF-UI-Text-Regular.ttf in Resources */,
 				4CCCEB061F479E65002CAEFB /* Main.storyboard in Resources */,
+				4CC2F9EE1F4BBE840068A3AB /* SF-UI-Display-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
