@@ -6,7 +6,7 @@
 
 
 
-##**Библиотеки**
+**Библиотеки**
 
 - Alamofire
 - SwiftyJSON
@@ -14,5 +14,11 @@
 - SDWebImage
 - SwiftLint
 
-![](https://cs14036.userapi.com/c816725/u252366955/docs/3725e798aa3a/gif.gif?extra=rwWD7fHuVdiLLhzu5g6nrD8np0MNhy-BAhjrZDJFMQE-GQe4ZZAi4TLl289Hv5RLVpBfyc3q7Myu7C-OGg9Jix9ZjJWNo3bgAHG_4-XUMNMK-3saGd34)
+**Демонстрация работы**
 
+![](https://github.com/glebsigal/ProductHunt-for-Junto/blob/master/preview.gif)
+
+P.S.
+API ProductHunt для метода "выбор для категории на сегодня" не отправляет посты, кроме категории tech. 
+Проверялось через клиент и Postman.
+https://api.producthunt.com/v1/docs/posts/posts_index_get_the_posts_of_today_(for_given_category)
