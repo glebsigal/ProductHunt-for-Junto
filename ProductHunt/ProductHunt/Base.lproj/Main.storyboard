@@ -69,7 +69,7 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="postCell" rowHeight="85" id="dH5-mO-FeK" customClass="PostCell" customModule="ProductHunt" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="55.5" width="375" height="85"/>
+                                <rect key="frame" x="0.0" y="56" width="375" height="85"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dH5-mO-FeK" id="nBX-r6-mNW">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>

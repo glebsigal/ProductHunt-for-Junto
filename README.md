@@ -1,6 +1,7 @@
 ## Тестовое задание для Junto
 
 **О приложении**
+
 Необходимо разработать простой клиент для ProductHunt (http://producthunt.com) с
 возможностью просматривать список продуктов по категориям.
 
@@ -18,7 +19,10 @@
 
 ![](https://github.com/glebsigal/ProductHunt-for-Junto/blob/master/preview.gif)
 
-P.S.
-API ProductHunt для метода "выбор для категории на сегодня" не отправляет посты, кроме категории tech. 
+**P.S.**
+
+API метод "выбор для категории на сегодня" не отправляет посты, кроме категории tech. 
+
 Проверялось через клиент и Postman.
+
 https://api.producthunt.com/v1/docs/posts/posts_index_get_the_posts_of_today_(for_given_category)
