@@ -25,4 +25,8 @@ API метод "выбор для категории на сегодня" не �
 
 Проверялось через клиент и Postman.
 
+<<<<<<< HEAD
 https://api.producthunt.com/v1/docs/posts/posts_index_get_the_posts_of_today_(for_given_category)
+=======
+https://api.producthunt.com/v1/docs/posts/posts_index_get_the_posts_of_today_(for_given_category)
+>>>>>>> c77b77e7707ceef1d47d23bd3fd478e148972adc
